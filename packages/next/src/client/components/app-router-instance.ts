@@ -124,6 +124,9 @@ async function runAction({
     }
 
     actionQueue.state = nextState
+    if (action.payload.type === ACTION_NAVIGATE) {
+      setState(nextState)
+    }
 
     runRemainingActions(actionQueue, action, setState)
     action.resolve(nextState)
