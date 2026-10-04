@@ -4,8 +4,8 @@
   <a href="https://docs.zuzunza.com/">
     <picture>
       <source media="(prefers-color-scheme: dark)"
-        srcset="docs/branding/zuku-logo-dark.png">
-      <img src="docs/branding/zuku-logo-light.png"
+        srcset="https://raw.githubusercontent.com/zukuapp/zukujs/44c1524e46cb95a360fcd8c1f78e7174ee2f6c52/docs/branding/zuku-logo-dark.png">
+      <img src="https://raw.githubusercontent.com/zukuapp/zukujs/44c1524e46cb95a360fcd8c1f78e7174ee2f6c52/docs/branding/zuku-logo-light.png"
         alt="ZUKU" width="320">
     </picture>
   </a>
