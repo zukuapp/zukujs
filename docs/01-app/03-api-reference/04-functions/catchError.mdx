@@ -15,7 +15,7 @@ The `catchError` function creates a component that wraps its children in an erro
 Compared to a custom React error boundary, `catchError` is designed to work with Next.js out of the box:
 
 - **Built-in error recovery** — [`retry()`](/docs/app/api-reference/file-conventions/error#retry) re-renders the page inside a [Transition](https://react.dev/reference/react/startTransition), preserving Client Components state outside of the error boundary.
-- **Framework-aware integration** — APIs like `redirect()` and `notFound()` work by throwing special errors under the hood. `catchError` handles these seamlessly, so they're not accidentally caught by your error boundary.
+- **Framework-aware integration** — APIs like `redirect()` and `notFound()` work by throwing special errors under the hood. `catchError` handles these, so your error boundary does not catch them.
 - **Client navigation handling** — The error state automatically clears when you do a client navigation to a different route.
 
 `catchError` can be called from [Client Components](/docs/app/getting-started/server-and-client-components).
@@ -339,14 +339,14 @@ export default function Component({ children }) {
 > **Good to know**:
 >
 > - Unlike the `error.js` file convention which is scoped to route segments, `catchError` can be used to wrap any part of your component tree for component-level error recovery.
-> - Props passed to the wrapper component are forwarded to the fallback function, making it easy to create reusable error UIs with different configurations.
+> - Props passed to the wrapper component are forwarded to the fallback function. This lets one error UI serve multiple configurations.
 > - You don't need to wrap `error.js` default exports with `catchError`. The [`error.js`](/docs/app/api-reference/file-conventions/error) file convention already renders inside a built-in error boundary provided by Next.js.
 
 </AppOnly>
 
 <PagesOnly>
 
-> **Good to know**: Props passed to the wrapper component are forwarded to the fallback function, making it easy to create reusable error UIs with different configurations.
+> **Good to know**: Props passed to the wrapper component are forwarded to the fallback function. This lets one error UI serve multiple configurations.
 
 </PagesOnly>
 

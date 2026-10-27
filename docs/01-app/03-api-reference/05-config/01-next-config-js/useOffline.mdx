@@ -90,7 +90,7 @@ A single client does not produce a runaway burst of traffic against its origin:
 - When connectivity returns, each pending navigation and Server Action fires once. Only the last navigation attempt is kept pending, and a typical form button is disabled while its action is pending.
 - Prefetches run through the [existing prefetch queue](/docs/app/guides/prefetching#prefetch-scheduling), not all at once.
 
-In practice, this feature is unlikely to flood your server. The only extra traffic it generates per offline user is the HEAD polling, which stops as soon as connectivity returns. Prefetches, Server Actions, and navigations fire the same number of times they would have without an outage, just delayed.
+The only extra traffic this feature generates per offline user is the HEAD polling, which stops as soon as connectivity returns. Prefetches, Server Actions, and navigations fire the same number of times they would have without an outage, after a delay.
 
 ## Version History
 

@@ -102,7 +102,7 @@ When you’re done, click "Create Content Type".
 
 Select **Author** and create a new record.
 
-- You just need **1 Author record**.
+- Create **1 Author record**.
 - Use dummy data for the text.
 - For the image, you can download one from [Unsplash](https://unsplash.com/).
 
@@ -132,7 +132,7 @@ cp .env.local.example .env.local
 
 Then set each variable on `.env.local`:
 
-- `TAKESHAPE_API_KEY` should be the API token you just copied.
+- `TAKESHAPE_API_KEY` should be the API token you copied.
 - `TAKESHAPE_PROJECT_ID` should be the project ID, which is a substring in the project page URL: `https://app.takeshape.io/projects/<project-id>/...`
 - `TAKESHAPE_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [the Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
 

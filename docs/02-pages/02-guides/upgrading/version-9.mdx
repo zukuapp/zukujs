@@ -28,7 +28,7 @@ bun add next@9
 
 If you previously copied the [Custom `<App>`](/docs/pages/building-your-application/routing/custom-app) example, you may be able to remove your `getInitialProps`.
 
-Removing `getInitialProps` from `pages/_app.js` (when possible) is important to leverage new Next.js features!
+Remove `getInitialProps` from `pages/_app.js` when possible so that pages can use new Next.js features.
 
 The following `getInitialProps` does nothing and may be removed:
 
@@ -168,7 +168,7 @@ Pages in this directory will no longer contain a client-side bundle.
 
 The ability to load multiple modules at once has been deprecated in `next/dynamic` to be closer to React's implementation (`React.lazy` and `Suspense`).
 
-Updating code that relies on this behavior is relatively straightforward! We've provided an example of a before/after to help you migrate your application:
+The following before/after example shows how to update code that relies on this behavior:
 
 **Before**
 

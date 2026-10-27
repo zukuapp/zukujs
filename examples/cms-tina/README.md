@@ -74,7 +74,7 @@ Your blog should be up and running on [http://localhost:3000](http://localhost:3
 
 ### Step 2. Editing blog posts.
 
-Tina is git backed and uses markdown, JSON or MDX to power websites. To enter edit mode locally you just need to visit [http://localhost:3000/admin](http://localhost:3000/admin)
+Tina is git backed and uses markdown, JSON or MDX to power websites. To enter edit mode locally, visit [http://localhost:3000/admin](http://localhost:3000/admin)
 
 You can then select the collection "Blog Posts" and then the content you would like to edit.
 

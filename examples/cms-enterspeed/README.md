@@ -88,7 +88,7 @@ Creating the Environment client will generate an API key, which is the one we wi
 
 Next, we need to get our content from our current CMS, PIM, etc. into Enterspeed. You can do this by using one of our [integrations](https://docs.enterspeed.com/integrations) or by using our [Ingest API](https://docs.enterspeed.com/api#tag/Ingest).
 
-In the example below we simply make a cURL request to ingest our demo data from this example into Enterspeed.
+The example below makes a cURL request to ingest our demo data from this example into Enterspeed.
 
 There are two content types we need to ingest, the `blogPost`-type which is the actual blog post, and a `blog`-type which will work as a collection/parent for the blog posts.
 

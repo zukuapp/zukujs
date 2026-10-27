@@ -24,42 +24,47 @@
   <h1>Next.js</h1>
 
 <a href="https://vercel.com"><img alt="Vercel logo" src="https://img.shields.io/badge/MADE%20BY%20Vercel-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000"></a>
-<a href="https://www.npmjs.com/package/next"><img alt="NPM version" src="https://img.shields.io/npm/v/next.svg?style=for-the-badge&labelColor=000000"></a>
+<a href="https://github.com/zukuapp/zukujs/blob/HEAD/CHANGELOG.md"><img alt="version" src="https://img.shields.io/badge/version-v27.26102701-informational"></a>
 <a href="https://github.com/vercel/next.js/blob/canary/license.md"><img alt="License" src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000"></a>
 <a href="https://github.com/vercel/next.js/discussions"><img alt="Join the community on GitHub" src="https://img.shields.io/badge/Join%20the%20community-blueviolet.svg?style=for-the-badge&logo=Next.js&labelColor=000000&logoWidth=20"></a>
 
 </div>
 
-## Getting Started
+## Overview
 
-Used by some of the world's largest companies, Next.js enables you to create full-stack web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.
+ZukuJS is ZUKU's maintained derivative of Next.js. This release is v27.26102701. It is based on upstream Next.js v16.4.0-canary.58. [ZUKUJS.md](https://github.com/zukuapp/zukujs/blob/HEAD/ZUKUJS.md) describes the fork and its changes.
 
-- Visit our [Learn Next.js](https://nextjs.org/learn) course to get started with Next.js.
-- Visit the [Next.js Showcase](https://nextjs.org/showcase) to see more sites built with Next.js.
+Next.js is a React framework for full-stack web applications. It extends the latest React features and integrates Rust-based JavaScript tooling.
+
+## Requirements
+
+- Node.js 20.9.0 or later
 
 ## Documentation
 
-Visit [https://nextjs.org/docs](https://nextjs.org/docs) to view the full documentation.
+- [Next.js documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn) course
+- [Next.js Showcase](https://nextjs.org/showcase)
 
 ## Community
 
-The Next.js community can be found on [GitHub Discussions](https://github.com/vercel/next.js/discussions) where you can ask questions, voice ideas, and share your projects with other people.
+- Questions, ideas, and projects: [GitHub Discussions](https://github.com/vercel/next.js/discussions)
+- Chat: the Next.js [Discord](https://nextjs.org/discord) server
 
-To chat with other community members, you can join the Next.js [Discord](https://nextjs.org/discord) server.
-
-Do note that our [Code of Conduct](https://github.com/vercel/next.js/blob/canary/CODE_OF_CONDUCT.md) applies to all Next.js community channels. Users are **highly encouraged** to read and adhere to it to avoid repercussions.
+The [Code of Conduct](https://github.com/vercel/next.js/blob/canary/CODE_OF_CONDUCT.md) applies to all Next.js community channels.
 
 ## Contributing
 
-Contributions to Next.js are welcome and highly appreciated. However, before you jump right into it, we would like you to review our [Contribution Guidelines](/contributing.md) to make sure you have a smooth experience contributing to Next.js.
+Read the [Contribution Guidelines](/contributing.md) before you open a pull request.
 
-### Good First Issues:
+The [good first issues](https://github.com/vercel/next.js/labels/good%20first%20issue) label lists bugs with a limited scope.
 
-We have a list of **[good first issues](https://github.com/vercel/next.js/labels/good%20first%20issue)** that contain bugs that have a relatively limited scope. This is a great place for newcomers and beginners alike to get started, gain experience, and get familiar with our contribution process.
-
----
 ## Security
 
-If you believe you have found a security vulnerability in Next.js, we encourage you to **_responsibly disclose this and NOT open a public issue_**.
+Report security vulnerabilities privately. Do not open a public issue.
 
-To participate in our Open Source Software Bug Bounty program, please visit [https://hackerone.com/vercel](https://hackerone.com/vercel).
+The Open Source Software Bug Bounty program is at [https://hackerone.com/vercel](https://hackerone.com/vercel).
+
+## Changelog
+
+See [CHANGELOG.md](https://github.com/zukuapp/zukujs/blob/HEAD/CHANGELOG.md).

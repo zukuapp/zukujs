@@ -2,7 +2,7 @@
 
 This is a simple set up for Firebase for client side applications.
 
-The firebase app is initialized in `firebase/clientApp.js`, to use you just have to import it anywhere in the app
+The firebase app is initialized in `firebase/clientApp.js`, import it anywhere in the app to use it
 
 The React Context API is used to provide user state.
 

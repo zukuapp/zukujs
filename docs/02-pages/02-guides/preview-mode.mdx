@@ -52,7 +52,7 @@ Next.js has a feature called **Preview Mode** which solves this problem. Here ar
 
 First, create a **preview API route**. It can have any name - e.g. `pages/api/preview.js` (or `.ts` if using TypeScript).
 
-In this API route, you need to call `setPreviewData` on the response object. The argument for `setPreviewData` should be an object, and this can be used by `getStaticProps` (more on this later). For now, we’ll use `{}`.
+In this API route, you need to call `setPreviewData` on the response object. The argument for `setPreviewData` should be an object, and this can be used by `getStaticProps` (described below). This example uses `{}`.
 
 ```js
 export default function handler(req, res) {
@@ -172,7 +172,7 @@ export async function getStaticProps(context) {
 }
 ```
 
-That’s it! If you access the preview API route (with `secret` and `slug`) from your headless CMS or manually, you should now be able to see the preview content. And if you update your draft without publishing, you should be able to preview the draft.
+When you access the preview API route (with `secret` and `slug`) from your headless CMS or manually, the page shows the preview content. When you update your draft without publishing, the page shows the updated draft.
 
 Set this as the preview URL on your headless CMS or access manually, and you should be able to see the preview.
 

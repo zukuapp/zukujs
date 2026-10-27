@@ -37,7 +37,7 @@ Every page is generated at build time. The output is static files that can be se
 
 ### Route-level boundaries
 
-Each route chooses whether it is static or dynamic. Static routes are prerendered at build time, dynamic routes are server-rendered per request. The infrastructure splits cleanly: static files go to a CDN, dynamic routes go to a server. This is straightforward to reason about but the choice is all-or-nothing per route. A mostly-static page with one dynamic element (a user greeting, a live price) must either be fully dynamic or fetch that element on the client after load.
+Each route chooses whether it is static or dynamic. Static routes are prerendered at build time, dynamic routes are server-rendered per request. The infrastructure splits cleanly: static files go to a CDN, dynamic routes go to a server. This model is simple, but the choice is all-or-nothing per route. A mostly-static page with one dynamic element (a user greeting, a live price) must either be fully dynamic or fetch that element on the client after load.
 
 ### Component-level boundaries
 

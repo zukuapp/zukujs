@@ -563,7 +563,7 @@ const secretKey = process.env.SESSION_SECRET
 
 #### 2. Encrypting and decrypting sessions
 
-Next, you can use your preferred [session management library](#session-management-libraries) to encrypt and decrypt sessions. Continuing from the previous example, we'll use [Jose](https://www.npmjs.com/package/jose) and React's [`server-only`](https://www.npmjs.com/package/server-only) package to ensure that your session management logic is only executed on the server.
+Next, you can use your preferred [session management library](#session-management-libraries) to encrypt and decrypt sessions. The following example uses [Jose](https://www.npmjs.com/package/jose) and React's [`server-only`](https://www.npmjs.com/package/server-only) package to ensure that your session management logic is only executed on the server.
 
 ```tsx filename="app/lib/session.ts" switcher
 import 'server-only'
@@ -713,7 +713,7 @@ export async function signup(state, formData) {
 > **Tips**:
 >
 > - **Cookies should be set on the server** to prevent client-side tampering.
-> - 🎥 Watch: Learn more about stateless sessions and authentication with Next.js → [YouTube (11 minutes)](https://www.youtube.com/watch?v=DJvM2lSPn6w).
+> - Watch: Learn more about stateless sessions and authentication with Next.js → [YouTube (11 minutes)](https://www.youtube.com/watch?v=DJvM2lSPn6w).
 
 #### Updating (or refreshing) sessions
 

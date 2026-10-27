@@ -4,7 +4,7 @@
 
 This starter is a statically generated blog that uses Next.js App Router for the frontend and [Sanity][sanity-homepage] to handle its content. It comes with a native Sanity Studio that offers features like real-time collaboration and visual editing with live updates using [Presentation][presentation].
 
-The Studio connects to Sanity Content Lake, which gives you hosted content APIs with a flexible query language, on-demand image transformations, powerful patching, and more. You can use this starter to kick-start a blog or learn these technologies.
+The Studio connects to Sanity Content Lake, which gives you hosted content APIs with a flexible query language, on-demand image transformations, patching, and more. You can use this starter to kick-start a blog or learn these technologies.
 
 ## Features
 
@@ -15,7 +15,7 @@ The Studio connects to Sanity Content Lake, which gives you hosted content APIs 
 - Side-by-side instant content preview that works across your whole site
 - Support for block content and the most advanced custom fields capability in the industry
 - Incremental Static Revalidation; no need to wait for a rebuild to publish new content
-- Unsplash integration setup for easy media management
+- Unsplash integration for media management
 - [Sanity AI Assist preconfigured for image alt text generation](https://www.sanity.io/docs/ai-assist?utm_source=github.com&utm_medium=organic_social&utm_campaign=ai-assist&utm_content=)
 - Out of the box support for [Vercel Visual Editing](https://www.sanity.io/blog/visual-editing-sanity-vercel?utm_source=github.com&utm_medium=referral&utm_campaign=may-vercel-launch).
 
@@ -172,7 +172,7 @@ Open your Sanity Studio that should be running on [http://localhost:3000/studio]
 By default you're taken to the [Presentation tool][presentation], which has a preview of the blog on the left hand side, and a list of documents on the right hand side.
 
 <details>
-<summary>View screenshot ✨</summary>
+<summary>View screenshot</summary>
 
 ![screenshot](https://github.com/vercel/next.js/assets/81981/07cbc580-4a03-4837-9aa4-90b632c95630)
 
@@ -184,7 +184,7 @@ We're all set to do some content creation!
 - Type some dummy data for the **Title**
 - **Generate** a **Slug**
   <details>
-  <summary>Now that you have a slug you should see the post show up in the preview on the left hand side ✨</summary>
+  <summary>Now that you have a slug you should see the post show up in the preview on the left hand side</summary>
 
   ![screenshot](https://github.com/vercel/next.js/assets/81981/05b74848-6ae4-442b-8995-0b7e2180aa74)
 
@@ -192,7 +192,7 @@ We're all set to do some content creation!
 
 - Fill in **Content** with some dummy text
   <details>
-  <summary>Or generate it with AI Assist ✨</summary>
+  <summary>Or generate it with AI Assist</summary>
 
   If you've enabled [AI Assist][enable-ai-assist] you click on the sparkles ✨ button and generate a draft based on your title and then on **Generate sample content**.
 
@@ -202,7 +202,7 @@ We're all set to do some content creation!
 
 - Summarize the **Content** in the **Excerpt** field
   <details>
-  <summary>Or have AI Assist summarize it for you ✨</summary>
+  <summary>Or have AI Assist summarize it</summary>
 
   If you've enabled [AI Assist][enable-ai-assist] you click on the sparkles ✨ button and then on **Generate sample content**.
 
@@ -212,19 +212,19 @@ We're all set to do some content creation!
 
 - Select a **Cover Image** from [Unsplash].
   <details>
-  <summary>Unsplash is available in the **Select** dropdown ✨</summary>
+  <summary>Unsplash is available in the **Select** dropdown</summary>
 
   ![screenshot](https://github.com/vercel/next.js/assets/81981/204d004d-9396-434e-8795-a8b68a2ed89b)
 
   </details>
   <details>
-  <summary>Click the "Crop image" button to adjust hotspots and cropping ✨</summary>
+  <summary>Click the "Crop image" button to adjust hotspots and cropping</summary>
 
   ![screenshot](https://github.com/vercel/next.js/assets/81981/e905fc6e-5bab-46a7-baec-7cb08747772c)
 
   </details>
   <details>
-  <summary>You can preview the results live on the left side, and additional formats on the right side ✨</summary>
+  <summary>You can preview the results live on the left side, and additional formats on the right side</summary>
 
   ![screenshot](https://github.com/vercel/next.js/assets/81981/6c59eef0-d2d9-4d77-928a-98e99df4b1df)
 
@@ -232,13 +232,13 @@ We're all set to do some content creation!
 
 - Customize the blog name, description and more.
   <details>
-  <summary>Click "Structure" at the top center, then on "Settings" on the left hand side ✨</summary>
+  <summary>Click "Structure" at the top center, then on "Settings" on the left hand side</summary>
 
   ![screenshot](https://github.com/vercel/next.js/assets/81981/14f48d83-af81-4589-900e-a7a598cc608a)
 
   </details>
   <details>
-  <summary>Once you have a "Settings" document, you can customize it inside "Presentation" ✨</summary>
+  <summary>Once you have a "Settings" document, you can customize it inside "Presentation"</summary>
 
   ![screenshot](https://github.com/vercel/next.js/assets/81981/e3473f7b-5e7e-46ab-8d43-cae54a4b929b)
 

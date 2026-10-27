@@ -14,7 +14,7 @@ If the random value is intended to be generated on every user request consider w
 
 If the random value is being used as a unique identifier for diagnostic purposes such as logging or tracking consider using an alternate method of id generation that does not rely on random number generation such as incrementing an integer.
 
-> **Note**: Sometimes the place that generates a random value synchronously is inside 3rd party code. While you can't easily replace the `Math.random()` call directly, the other strategies can be applied in your own project code regardless of how deep random generation is.
+> **Note**: Sometimes the place that generates a random value synchronously is inside 3rd party code. While you can't replace the `Math.random()` call directly, the other strategies can be applied in your own project code regardless of how deep random generation is.
 
 ### Cache the random value
 
@@ -43,7 +43,7 @@ export default async function Page() {
 }
 ```
 
-> **Note**: `"use cache"` is a powerful API with some nuances. If your cache lifetime is too short Next.js may still exclude it from prerendering. Check out the docs for `"use cache"` to learn more.
+> **Note**: `"use cache"` is an API with some nuances. If your cache lifetime is too short Next.js may still exclude it from prerendering. Check out the docs for `"use cache"` to learn more.
 
 ### Indicate the random value is unique per Request
 

@@ -48,4 +48,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 1. First, push your app to GitHub/GitLab or Bitbucket
 2. Then, go to [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) and import your new repository.
 3. Add an environment variable with name `API_KEY` and your API key for value.
-4. Click on deploy 🎉
+4. Click on deploy.

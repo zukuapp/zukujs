@@ -6,7 +6,7 @@
 
 This is a starter project for creating universal React apps with Next.js, Expo, and TypeScript.
 
-> 💡 For the most updated info, see the [Expo + Next.js Docs](https://docs.expo.io/guides/using-nextjs/)!
+> For the most updated info, see the [Expo + Next.js Docs](https://docs.expo.io/guides/using-nextjs/)!
 
 ![iOS, Android, and web running with Expo and Next.js](./public/demo.png)
 
@@ -44,7 +44,7 @@ pnpm create next-app --example with-expo-typescript with-expo-typescript-app
 
 ### Running web
 
-> 🚨 Using default Expo web with Next.js is not supported.
+> Using default Expo web with Next.js is not supported.
 
 - Start the Next.js project with `yarn dev` (`yarn next dev`).
 

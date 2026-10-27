@@ -172,7 +172,7 @@ async function proxy(request: NextRequest) {
 
 In general, avoid copying all incoming request headers because doing so can leak sensitive data to clients or upstream services.
 
-Prefer a defensive approach by creating a subset of incoming request headers using an allow-list. For example, you might discard custom `x-*` headers and only forward known-safe headers:
+Prefer a defensive approach by creating a subset of incoming request headers using an allow-list. The following example discards custom `x-*` headers and forwards only known-safe headers:
 
 ```ts
 import { type NextRequest, NextResponse } from 'next/server'

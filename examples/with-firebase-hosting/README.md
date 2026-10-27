@@ -2,7 +2,7 @@
 
 The goal is to host the Next.js app on Firebase Cloud Functions with Firebase Hosting rewrite rules so our app is served from our Firebase Hosting URL. Each individual `page` bundle is served in a new call to the Cloud Function which performs the initial server render.
 
-If you are having issues, feel free to tag @jthegedus in the [issue you create on the next.js repo](https://github.com/vercel/next.js/issues/new)
+If you are having issues, tag @jthegedus in the [issue you create on the next.js repo](https://github.com/vercel/next.js/issues/new)
 
 <details>
 <summary><b>Make sure that firebase is set up and you have the projectID</b></summary>
@@ -49,7 +49,7 @@ yarn deploy
 
 ## TypeScript
 
-To use TypeScript, simply follow [TypeScript setup](https://nextjs.org/learn/excel/typescript/setup) as normal (package.json scripts are already set).
+To use TypeScript, follow [TypeScript setup](https://nextjs.org/learn/excel/typescript/setup) as normal (package.json scripts are already set).
 
 i.e: `npm install --save-dev typescript @types/react @types/node`
 

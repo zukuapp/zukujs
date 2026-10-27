@@ -7,11 +7,11 @@ This package is not published to npm. Instead it's built and vendored into the m
 
 ## Features
 
-- 📊 **Interactive Treemap**: Visualize bundle sizes with an interactive treemap interface
-- 🎯 **Route-based Analysis**: Analyze bundle data for specific routes in your application
-- 🔍 **Dependency Tracking**: View import chains and dependency relationships
-- 🎨 **Filter Controls**: Filter by environment (client/server) and file types (JS/CSS/JSON/Assets)
-- 🔎 **Search Functionality**: Search through files in your bundle
+- **Interactive Treemap**: Visualize bundle sizes with an interactive treemap interface
+- **Route-based Analysis**: Analyze bundle data for specific routes in your application
+- **Dependency Tracking**: View import chains and dependency relationships
+- **Filter Controls**: Filter by environment (client/server) and file types (JS/CSS/JSON/Assets)
+- **Search Functionality**: Search through files in your bundle
 
 ## Updating
 

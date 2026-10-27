@@ -14,7 +14,7 @@ If the current time is appropriate to be prefetched consider moving it into a Ca
 
 If the current time is intended to be accessed dynamically on every user navigation first consider whether it is more appropriate to access it in a Client Component, which can often be the case when reading the time for display purposes. If a Client Component isn't the right choice then consider whether you can move the current time access later, behind other existing uncached data or Request data access. If there is no way to do this you can always precede the current time access with Request data access by using `await connection()`.
 
-> **Note**: Sometimes the place that accesses the current time is inside 3rd party code. While you can't easily convert the time access to `performance.now()` the other strategies can be applied in your own project code regardless of how deeply the time is read.
+> **Note**: Sometimes the place that accesses the current time is inside 3rd party code. While you can't convert the time access to `performance.now()` the other strategies can be applied in your own project code regardless of how deeply the time is read.
 
 ### Performance use case
 

@@ -26,7 +26,7 @@ pnpm create next-app --example with-algolia-react-instantsearch with-algolia-rea
 bunx create-next-app --example with-algolia-react-instantsearch with-algolia-react-instantsearch-app
 ```
 
-This example is already configured with an e-commerce index, but you can easily customize it by:
+This example is already configured with an e-commerce index, but you can customize it by:
 
 - [creating an Algolia account](https://www.algolia.com/doc/guides/getting-started/quick-start/#sign-up-for-an-algolia-account),
 - [indexing your data](https://www.algolia.com/doc/guides/sending-and-managing-data/send-and-update-your-data/#index-your-data-without-coding),

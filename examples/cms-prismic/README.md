@@ -89,7 +89,7 @@ Go to the [Prismic dashboard](https://prismic.io/dashboard) and select your Pris
 
 Once in, click on **Create new** and select the **Author** type:
 
-- You just need **1 author document**.
+- Create **1 author document**.
 - Use dummy data for the text.
 - For the image, you can download one from [Unsplash](https://unsplash.com/).
 

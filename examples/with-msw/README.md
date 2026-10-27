@@ -1,8 +1,8 @@
 # Mock Service Worker Example
 
-[Mock Service Worker](https://github.com/mswjs/msw) is an API mocking library for browser and Node. It provides seamless mocking by interception of actual requests on the network level using Service Worker API. This makes your application unaware of any mocking being at place.
+[Mock Service Worker](https://github.com/mswjs/msw) is an API mocking library for browser and Node. It intercepts actual requests on the network level using the Service Worker API. This makes your application unaware of any mocking being at place.
 
-In this example we integrate Mock Service Worker with Next by following the next steps:
+This example integrates Mock Service Worker with Next.js in the following steps:
 
 1. Define a set of [request handlers](./mocks/handlers.ts) shared between client and server.
 1. Setup a [Service Worker instance](./mocks/browser.ts) that would intercept all runtime client-side requests via `setupWorker` function.

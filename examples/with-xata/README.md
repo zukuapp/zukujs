@@ -36,7 +36,7 @@ pnpm create next-app --example with-xata with-xata-app
 
 ### Link With Your Xata Workspace And Update Types
 
-> 💡 We recommend installing the [Xata CLI](https://xata.io/docs/cli/getting-started) globally, but you can also use `npx @xata.io/cli` instead of `xata` in the commands below.
+> We recommend installing the [Xata CLI](https://xata.io/docs/cli/getting-started) globally, but you can also use `npx @xata.io/cli` instead of `xata` in the commands below.
 
 You can link your project with a Xata workspace by running the following command:
 
@@ -54,7 +54,7 @@ xata codegen
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-> 💡 the template will prompt you to create a dummy new table (`nextjs_with_xata_example`) with some useful resources.
+> The template prompts you to create a dummy new table (`nextjs_with_xata_example`) with some useful resources.
 
 ## Notes
 

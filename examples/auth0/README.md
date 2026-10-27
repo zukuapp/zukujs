@@ -1,6 +1,6 @@
 # Next.js and Auth0 Example
 
-This example shows how you can use `@auth0/nextjs-auth` to easily add authentication support to your Next.js application. It tries to cover a few topics:
+This example shows how you can use `@auth0/nextjs-auth` to add authentication support to your Next.js application. It tries to cover a few topics:
 
 - Signing in
 - Signing out

@@ -23,7 +23,7 @@ Z --> E & F & G;
 
 Configuring GraphQL Mesh only requires installing the required packages and providing a `.meshrc.yaml` configuration file.
 
-This project translate the PetStore REST API (https://petstore.swagger.io/) to a GraphQL API by simply providing the following configuration:
+This project translate the PetStore REST API (https://petstore.swagger.io/) to a GraphQL API with the following configuration:
 
 _[`.meshrc.yaml`](./.meshrc.yaml)_
 

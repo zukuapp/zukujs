@@ -46,7 +46,7 @@ export default async function Page() {
 
 Another pattern to explore is using the React `use` API with a Context Provider. This allows you to pass Promises to child components and resolve them using the `use` API . Here's an example:
 
-First, let's create a separate file for the context provider:
+Create a separate file for the context provider:
 
 ```tsx filename="app/context.tsx"
 'use client'
@@ -76,7 +76,7 @@ export function useBlogContext() {
 }
 ```
 
-Now, let's create the Promise in a Server Component and stream it to the client:
+Next, create the Promise in a Server Component and stream it to the client:
 
 ```tsx filename="app/page.tsx"
 import { BlogProvider } from './context'

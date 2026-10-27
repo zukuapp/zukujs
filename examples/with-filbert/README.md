@@ -1,10 +1,10 @@
 # Using Next.js with filbert-js
 
-A light weight(~1KB) css-in-js solution(framework)🎨
+A light weight(~1KB) css-in-js solution (framework).
 
 This example showcase how to perform SSR & extract and inline critical css with [@filbert-js/server-stylesheet](https://www.npmjs.com/package/@filbert-js/server-stylesheet) and [@filbert-js/core](https://www.npmjs.com/package/@filbert-js/core)
 
-If you are running into any issues with this example, feel free to open-up an issue at https://github.com/kuldeepkeshwar/filbert-js/issues.
+Report issues with this example at https://github.com/kuldeepkeshwar/filbert-js/issues.
 
 ## Deploy your own
 

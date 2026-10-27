@@ -471,7 +471,7 @@ Next.js requires you to explicitly handle components that can't complete during 
   height="785"
 />
 
-> **🎥 Watch:** Why Partial Prerendering and how it works → [YouTube (10 minutes)](https://www.youtube.com/watch?v=MTcPrTIBkpA).
+> **Watch:** Why Partial Prerendering and how it works → [YouTube (10 minutes)](https://www.youtube.com/watch?v=MTcPrTIBkpA).
 
 ### Maximizing the static shell
 
@@ -533,7 +533,7 @@ The same principle applies to `cookies()`, `headers()`, `searchParams`, and data
 
 ### Instant navigation
 
-Cache Components shipped in 16.0.0 with verification that direct visits to a route produce a static shell. Client navigations are different: a `<Suspense>` boundary that covers a direct visit may not be part of the render during a transition. Getting that structure right is easier when the framework steps in. Cache Components now validates these navigations too, giving you insights and errors that guide you to make navigations to your route instant. For example, wrap data in `<Suspense>`, cache it with `use cache`, or move where the access happens.
+Cache Components shipped in 16.0.0 with verification that direct visits to a route produce a static shell. Client navigations are different: a `<Suspense>` boundary that covers a direct visit may not be part of the render during a transition. Cache Components now validates these navigations too, giving you insights and errors that guide you to make navigations to your route instant. For example, wrap data in `<Suspense>`, cache it with `use cache`, or move where the access happens.
 
 Read the [Instant navigation guide](/docs/app/guides/instant-navigation) for examples and inspection tools.
 

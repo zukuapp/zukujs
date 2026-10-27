@@ -20,7 +20,7 @@ If you fill out the "Which area(s) are affected? (Select all that apply)" sectio
 
 ### Manual triaging
 
-If the issue is specific to the project and not to Next.js itself, it will be converted to a [🎓️ Help discussion](https://github.com/vercel/next.js/discussions/categories/help)
+If the issue is specific to the project and not to Next.js itself, it will be converted to a [Help discussion](https://github.com/vercel/next.js/discussions/categories/help)
 
 A maintainer can also manually label an issue with one of the following labels, which will also add a comment with a correct course of action:
 

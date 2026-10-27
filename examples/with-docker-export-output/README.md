@@ -11,7 +11,7 @@ A production-ready example demonstrating how to Dockerize Next.js applications u
 - Slim/Alpine Linux base images for optimal compatibility and smaller size
 - BuildKit cache mounts for faster builds
 - Production-ready configuration with optimized Nginx settings
-- Docker Compose support for easy deployment
+- Docker Compose support for deployment
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ docker run -p 8080:8080 nextjs-static-export
 - Simple Node.js-based static file server
 - Quick development/testing deployments
 - Familiar Node.js ecosystem
-- Easy customization
+- Customizable setup
 
 #### Using Docker Compose
 
@@ -164,7 +164,7 @@ Learn more about [Next.js static export](https://nextjs.org/docs/app/api-referen
 - **You've tested thoroughly**: You've verified all your dependencies work correctly with musl libc
 - **Security-focused deployments**: Alpine's minimal attack surface can be beneficial for security-sensitive applications
 
-To switch to Alpine, simply change the `NODE_VERSION` ARG in the Dockerfile to `24.11.1-alpine`.
+To switch to Alpine, change the `NODE_VERSION` ARG in the Dockerfile to `24.11.1-alpine`.
 
 > [!IMPORTANT]
 > **Version Maintenance**:
@@ -242,7 +242,7 @@ This example can be deployed to any container-based platform:
 
 - Quick development/testing deployments
 - You prefer Node.js ecosystem
-- You need easy customization
+- You need to customize the server
 - Image size is not a concern
 
 ## Learn More

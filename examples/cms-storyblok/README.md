@@ -139,7 +139,7 @@ cp .env.local.example .env.local
 
 Then set each variable on `.env.local`:
 
-- `STORYBLOK_API_KEY` should be the API key you just copied.
+- `STORYBLOK_API_KEY` should be the API key you copied.
 - `STORYBLOK_PREVIEW_SECRET` can be any random string (but avoid spaces), like `MY_SECRET` - this is used for [the Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
 
 ### Step 9. Configure Image Optimization
@@ -187,7 +187,7 @@ Your blog should be up and running on [http://localhost:3000](http://localhost:3
 
 ### Step 9. Try preview mode
 
-To try preview mode, create another post like before (you can try duplicating), but **do not publish it - just save it**:
+To try preview mode, create another post like before (you can try duplicating), but **do not publish it - only save it**:
 
 Now, if you go to the post page on localhost, you won't see this post because it’s not published. However, if you use the **Preview Mode**, you'll be able to see the change ([Documentation](https://nextjs.org/docs/advanced-features/preview-mode)).
 

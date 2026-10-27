@@ -70,7 +70,7 @@ The key principle behind Agility CMS is that **Editors** should have full contro
 
 This means you'll not only be defining **Content** for your `Posts` and `Authors`, but you'll also be defining UI Components to compose your pages. This site will consist of a single **Page Template** and a collection of **Modules** that represent the UI components you see on the page.
 
-> **NOTE** - `Modules` and `Page Templates` in Agility CMS simply correspond to `React Components` in your website.
+> **NOTE** - `Modules` and `Page Templates` in Agility CMS correspond to `React Components` in your website.
 
 Once you've gone through the steps below, you'll be able to dynamically manage pages (and what is on them) directly through the CMS without requiring a developer.
 
@@ -139,7 +139,7 @@ From within the Agility CMS Content Manager, navigate to **Shared Content** and 
 
 Go to **Shared Content**, select the **Authors** list and click the **+ New** button to create a new content item:
 
-- You just need **1 Author content item**.
+- Create **1 Author content item**.
 - Use dummy data for the text.
 - For the image, you can download one from [Unsplash](https://unsplash.com/).
 
@@ -223,7 +223,7 @@ Navigate to **Pages** and click the **+ (New)** button in the page tree to creat
 
 Click **Save** to create the `/home` page.
 
-Next, let's add the `Intro`, `Hero Post` and `More Stories` modules to the `Main Content Zone` of the `home` page:
+Next, add the `Intro`, `Hero Post` and `More Stories` modules to the `Main Content Zone` of the `home` page:
 
 - Click the **+ (New)** button on `Main Content Zone` and select `Intro` to add the module to the page
 - Click **Save & Close** on the module to return back to the page
@@ -261,7 +261,7 @@ Navigate to **Pages** and select the existing `/posts` folder. Click the **+ (Ne
 
 Click **Save** to create the `/posts/posts-dynamic` dynamic page.
 
-Next, let's add the `Post Details` and `More Stories` modules to the `Main Content Zone` of the `posts-dynamic` page:
+Next, add the `Post Details` and `More Stories` modules to the `Main Content Zone` of the `posts-dynamic` page:
 
 - Click the **+ (New)** button on `Main Content Zone` and select `Post Details` to add the module to the page
 - Click the **+ (New)** button on `Main Content Zone` and select `More Stories` to add the module to the page

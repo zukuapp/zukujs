@@ -181,7 +181,7 @@ export default async function PostPage({ params }) {
 
 ## Accessing root parameters in shared code
 
-Root parameter getters are module imports, they can be called from any Server Component or server-side utility, not just layouts and pages:
+Root parameter getters are module imports, they can be called from any Server Component or server-side utility, in addition to layouts and pages:
 
 ```tsx filename="lib/get-translations.ts" highlight={4}
 import { lang } from 'next/root-params'

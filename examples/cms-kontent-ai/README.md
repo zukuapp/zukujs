@@ -137,7 +137,7 @@ The content type should look like this:
 
 Go to `Content & Assets` section in your project and click `Create new` on the `Content` tab and select `Author` content type.
 
-- You just need **1 author item** first.
+- Create **1 author item** first.
 - Use dummy data for his name.
 - For the image, you can download one from [Unsplash](https://unsplash.com/).
 
@@ -196,7 +196,7 @@ Once saved, go to one of the posts you've created and:
 
 - Create a new version of the post
 - **Update the title**. For example, you can add `[Draft]` in front of the title.
-  > Mind the title also regenerates the URL slug, if you want to change any other field that does not influence the URL slug, feel free to do so.
+  > Mind the title also regenerates the URL slug, if you want to change any other field that does not influence the URL slug, you can do so.
 - **Do not** publish it. By not publishing it, the post will be in the draft workflow step.
 - On the menu, you will see the **Preview** button. Click on it!
 

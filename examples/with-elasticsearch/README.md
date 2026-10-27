@@ -1,6 +1,6 @@
 ## Example app using Elasticsearch
 
-[Elasticsearch](https://www.elastic.co/elasticsearch) is a distributed, RESTful search and analytics engine. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease. This example will show you how to connect to and use Elasticsearch as your search backend for your Next.js app.
+[Elasticsearch](https://www.elastic.co/elasticsearch) is a distributed, RESTful search and analytics engine. As the heart of the Elastic Stack, it centrally stores your data for search, relevancy tuning, and analytics. This example shows how to connect to and use Elasticsearch as your search backend for your Next.js app.
 
 If you want to learn more about Elasticsearch, visit the following pages:
 

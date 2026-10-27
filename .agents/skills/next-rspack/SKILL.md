@@ -23,7 +23,7 @@ Use this skill when you need to:
 - Fix Rspack-related compilation issues
 - Develop Rspack-specific features in Next.js
 
-> **⚠️ Scope Limitation**: This skill only applies to code and configuration under the `rspack/` directory. The `rust-toolchain.toml` in the repository root is for Turbopack and is outside the scope of this skill.
+> **Scope Limitation**: This skill only applies to code and configuration under the `rspack/` directory. The `rust-toolchain.toml` in the repository root is for Turbopack and is outside the scope of this skill.
 
 ## Architecture Overview
 

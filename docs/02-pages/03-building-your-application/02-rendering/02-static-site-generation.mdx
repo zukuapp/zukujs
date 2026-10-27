@@ -39,7 +39,7 @@ description: Use Static Site Generation (SSG) to prerender pages at build time.
 
 If a page uses **Static Generation**, the page HTML is generated at **build time**. That means in production, the page HTML is generated when you run `next build`. This HTML will then be reused on each request. It can be cached by a CDN.
 
-In Next.js, you can statically generate pages **with or without data**. Let's take a look at each case.
+In Next.js, you can statically generate pages **with or without data**. The following sections describe each case.
 
 ### Static Generation without data
 
@@ -175,9 +175,9 @@ You can use Static Generation for many types of pages, including:
 
 You should ask yourself: "Can I prerender this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
 
-On the other hand, Static Generation is **not** a good idea if you cannot prerender a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+On the other hand, Static Generation is **not** a good idea if you cannot prerender a page ahead of a user's request. This applies when your page shows frequently updated data and the page content changes on every request.
 
 In cases like this, you can do one of the following:
 
 - Use Static Generation with **Client-side data fetching:** You can skip prerendering some parts of a page and then use client-side JavaScript to populate them. To learn more about this approach, check out the [Data Fetching documentation](/docs/pages/building-your-application/data-fetching/client-side).
-- Use **Server-Side Rendering:** Next.js prerenders a page on each request. It will be slower because the page cannot be cached by a CDN, but the prerendered page will always be up-to-date. We'll talk about this approach below.
+- Use **Server-Side Rendering:** Next.js prerenders a page on each request. It will be slower because the page cannot be cached by a CDN, but the prerendered page will always be up-to-date. This approach is described below.

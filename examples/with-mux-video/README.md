@@ -17,7 +17,7 @@ If you do not already have a Mux account, the easiest way to get started with Mu
 
 ### Existing Mux user
 
-If you have an existing Mux account, you can still deploy easily with [Vercel](https://vercel.com/home):
+If you have an existing Mux account, you can still deploy with [Vercel](https://vercel.com/home):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-mux-video&project-name=with-mux-video&repository-name=with-mux-video)
 

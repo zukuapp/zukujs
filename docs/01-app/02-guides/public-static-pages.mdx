@@ -15,9 +15,9 @@ This guide will show you how to build public pages that share data across users.
 
 ## Example
 
-As an example, we'll build a product list page.
+This example builds a product list page.
 
-We'll start with a static header, add a product list with async external data, and learn how to render it without blocking the response. Finally, we'll add a user-specific promotion banner without switching the entire page to [dynamic rendering](/docs/app/glossary#dynamic-rendering).
+It starts with a static header, adds a product list with async external data, and renders it without blocking the response. Finally, it adds a user-specific promotion banner without switching the entire page to [dynamic rendering](/docs/app/glossary#dynamic-rendering).
 
 You can find the resources used in this example here:
 
@@ -27,7 +27,7 @@ You can find the resources used in this example here:
 
 ### Step 1: Add a simple header
 
-Let's start with a simple header.
+Start with a static header.
 
 ```tsx filename="app/products/page.tsx"
 // Static component
@@ -66,7 +66,7 @@ Notice that the product route is marked as static, even though we didn't add any
 
 ### Step 2: Add the product list
 
-Now, let's fetch and render our product list.
+Next, fetch and render the product list.
 
 ```tsx filename="app/products/page.tsx"
 import db from '@/db'
@@ -156,7 +156,7 @@ But, pages rarely stay static forever.
 
 ### Step 3: Add a dynamic promotion banner
 
-Sooner or later, even simple pages need some dynamic content. To demonstrate this, let's add a promotional banner:
+Sooner or later, even simple pages need some dynamic content. The following example adds a promotional banner:
 
 ```tsx filename="app/products/page.tsx"
 import db from '@/db'
@@ -251,7 +251,7 @@ We've learned how to build mostly static pages that include pockets of dynamic c
 
 We started with a static page, added async work, and resolved the blocking behavior by caching what could be prerendered, and streaming what couldn't.
 
-In future guides, we'll learn how to:
+Related guides cover how to:
 
 - Revalidate prerendered pages or cached data.
 - Create variants of the same page with route params.

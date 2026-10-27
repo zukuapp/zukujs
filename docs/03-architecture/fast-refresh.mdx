@@ -35,7 +35,7 @@ app. **You will not lose component state**.
 ### Runtime Errors
 
 If you make a mistake that leads to a runtime error inside your component,
-you'll be greeted with a contextual overlay. Fixing the error will automatically
+Next.js shows a contextual overlay. Fixing the error will automatically
 dismiss the overlay, without reloading the app.
 
 Component state will be retained if the error did not occur during rendering. If
@@ -97,8 +97,8 @@ while Fast Refresh is happening.
 
 For example, when you edit `useMemo(() => x * 2, [x])` to
 `useMemo(() => x * 10, [x])`, it will re-run even though `x` (the dependency)
-has not changed. If React didn't do that, your edit wouldn't reflect on the
-screen!
+has not changed. Without the re-run, the edit would not appear on the
+screen.
 
 Sometimes, this can lead to unexpected results. For example, even a `useEffect`
 with an empty array of dependencies would still re-run once during Fast Refresh.

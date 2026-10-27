@@ -1,8 +1,8 @@
 # Example with goober
 
-This is an example of how [🥜 goober](https://github.com/cristianbote/goober) can be used with `Next.js` to fully render a SSR website or app. [🥜 goober](https://github.com/cristianbote/goober) proposal is: "a less than 1KB css-in-js alternative with a familiar API" and offering the same functionality one would need.
+This is an example of how [goober](https://github.com/cristianbote/goober) can be used with `Next.js` to fully render a SSR website or app. [goober](https://github.com/cristianbote/goober) proposal is: "a less than 1KB css-in-js alternative with a familiar API" and offering the same functionality one would need.
 
-If you are running into any issues with this example, feel free to open-up an issue at https://github.com/cristianbote/goober/issues.
+Report issues with this example at https://github.com/cristianbote/goober/issues.
 
 Why is there a peanut emoji?
 

@@ -546,7 +546,7 @@ export const metadata = {
 
 > **Good to know**:
 >
-> - It may be more convenient to use the [file-based Metadata API](/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif) for Open Graph images. Rather than having to sync the config export with actual files, the file-based API will automatically generate the correct metadata for you.
+> - The [file-based Metadata API](/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif) also generates Open Graph image metadata. It derives the metadata from the image files, so the config export does not need to be kept in sync with them.
 
 ### `robots`
 
@@ -651,11 +651,11 @@ export const metadata = {
 
 ### `themeColor`
 
-> **Deprecated**: The `themeColor` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
+> **Deprecated**: The `themeColor` option in `metadata` is deprecated as of Next.js 14. Use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
 
 ### `colorScheme`
 
-> **Deprecated**: The `colorScheme` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
+> **Deprecated**: The `colorScheme` option in `metadata` is deprecated as of Next.js 14. Use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
 
 ### `manifest`
 
@@ -673,7 +673,7 @@ export const metadata = {
 
 ### `twitter`
 
-The Twitter specification is (surprisingly) used for more than just X (formerly known as Twitter).
+The Twitter specification is also used by platforms other than X (formerly known as Twitter).
 
 Learn more about the [Twitter Card markup reference](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/markup).
 
@@ -751,7 +751,7 @@ export const metadata = {
 
 ### `viewport`
 
-> **Deprecated**: The `viewport` option in `metadata` is deprecated as of Next.js 14. Please use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
+> **Deprecated**: The `viewport` option in `metadata` is deprecated as of Next.js 14. Use the [`viewport` configuration](/docs/app/api-reference/functions/generate-viewport) instead.
 
 ### `verification`
 
@@ -1017,7 +1017,7 @@ export const metadata = {
 
 ### `other`
 
-All metadata options should be covered using the built-in support. However, there may be custom metadata tags specific to your site, or brand new metadata tags just released. You can use the `other` option to render any custom metadata tag.
+The `other` option renders custom metadata tags that the built-in options do not cover, such as site-specific tags or newly released tags.
 
 ```jsx filename="layout.js | page.js"
 export const metadata = {

@@ -34,4 +34,4 @@ To add new strings use the [react component](https://lingui.dev/tutorials/react-
 
 ### How to add another language
 
-To add another language simply run `yarn add-locale <locale ...>` and it will create a new locale in the `locale/messages/` directory.
+To add another language, run `yarn add-locale <locale ...>` and it will create a new locale in the `locale/messages/` directory.

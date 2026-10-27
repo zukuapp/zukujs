@@ -165,7 +165,7 @@ When using [`output: "standalone"`](/docs/app/api-reference/config/next-config-j
 
 If you need loader support beyond what's built in, many webpack loaders already work with Turbopack. There are currently some limitations:
 
-- Only a core subset of the webpack loader API is implemented. Currently, there is enough coverage for some popular loaders, and we'll expand our API support in the future.
+- Only a core subset of the webpack loader API is implemented. This subset covers some popular loaders.
 - Only loaders that return JavaScript code are supported. Loaders that transform files like stylesheets or images are not currently supported.
 - Options passed to webpack loaders must be plain JavaScript primitives, objects, and arrays. For example, it's not possible to pass `require()` plugin modules as option values.
 

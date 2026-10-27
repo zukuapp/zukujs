@@ -1,6 +1,6 @@
 # API routes with middleware
 
-Next.js ships with [API routes](https://github.com/vercel/next.js#api-routes), which provide an easy solution to build your own `API`. This example shows how to implement simple `middleware` to wrap around your `API` endpoints.
+Next.js ships with [API routes](https://github.com/vercel/next.js#api-routes), which let you build your own `API`. This example shows how to implement `middleware` to wrap around your `API` endpoints.
 
 ## Deploy your own
 

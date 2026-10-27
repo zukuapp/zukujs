@@ -25,7 +25,6 @@
   - Proxy
   - Client
   - Server
-  - It just works!
 - supabase-ssr. A package to configure Supabase Auth to use cookies
 - Password-based authentication block installed via the [Supabase UI Library](https://supabase.com/ui/docs/nextjs/password-based-auth)
 - Styling with [Tailwind CSS](https://tailwindcss.com)
@@ -47,7 +46,7 @@ After installation of the Supabase integration, all relevant environment variabl
 
 The above will also clone the Starter kit to your GitHub, you can clone that locally and develop locally.
 
-If you wish to just develop locally and not deploy to Vercel, [follow the steps below](#clone-and-run-locally).
+To develop locally without deploying to Vercel, [follow the steps below](#clone-and-run-locally).
 
 ## Clone and run locally
 

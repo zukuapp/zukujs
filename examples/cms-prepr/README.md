@@ -98,7 +98,6 @@ Your example Blog website should be up and running on [http://localhost:3000](ht
 
 ### Step 4. Optional: Try Preview mode
 
-Great progress has been made! You are just a few steps away from getting your example website live.
 Before proceeding, you can test how the content preview works in Prepr. This step is optional. Proceed to Step 5 if you don’t want to use preview mode.
 
 To try preview mode, follow these steps:

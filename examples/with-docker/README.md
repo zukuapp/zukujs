@@ -152,7 +152,7 @@ Learn more about [Next.js standalone output](https://nextjs.org/docs/pages/api-r
 - **You've tested thoroughly**: You've verified all your dependencies work correctly with musl libc
 - **Security-focused deployments**: Alpine's minimal attack surface can be beneficial for security-sensitive applications
 
-To switch to Alpine, simply change the `NODE_VERSION` ARG in the Dockerfile to `24.11.1-alpine`.
+To switch to Alpine, change the `NODE_VERSION` ARG in the Dockerfile to `24.11.1-alpine`.
 
 > [!IMPORTANT]
 > **Node.js Version Maintenance**: This Dockerfile uses Node.js 24.13.0-slim, which was the latest LTS version at the time of writing. To ensure security and stay up-to-date, regularly check and update the `NODE_VERSION` ARG in the Dockerfile to the latest Node.js LTS version. Check the latest version at [Nodejs official website](https://nodejs.org/) and browse available Node.js images on [Docker Hub](https://hub.docker.com/_/node).

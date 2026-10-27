@@ -164,7 +164,7 @@ After setting up the content model (either manually or by running `npm run setup
 
 Go to the **Content** section in your space, then click on **Add entry** and select the **Author** content type:
 
-- You just need **1 author entry**.
+- Create **1 author entry**.
 - Use dummy data for the text.
 - For the image, you can download one from [Unsplash](https://unsplash.com/).
 
@@ -290,7 +290,7 @@ In your Contentful space, go to **Settings > Webhooks** and add a new webhook:
 
   ![Content publish changes](https://github.com/vercel/next.js/assets/9113740/78bd856c-ece1-4bf3-a330-1d544abd858d)
 
-- **Edit post:** Now, try editing the title of one of your blog posts in Contentful and click Publish. You should see the changed reflected in the website you just deployed, all without triggering a build! Behind the scenes a call was made to the revalidate api that triggers a revalidation of both the landing page and the specific post that was changed.
+- **Edit post:** Edit the title of a blog post in Contentful and click Publish. The change appears on the deployed website without a new build. Behind the scenes a call was made to the revalidate api that triggers a revalidation of both the landing page and the specific post that was changed.
 
   ![Content publish changes](https://github.com/vercel/next.js/assets/9113740/ad96bfa7-89c1-4e46-9d9c-9067176c9769)
 

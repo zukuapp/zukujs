@@ -19,7 +19,7 @@ If you have built your application with the [default Vite plugin for React](http
 
 ### No automatic code splitting
 
-The previous issue of slow loading times can be somewhat managed with code splitting. However, if you try to do code splitting manually, you'll often make performance worse. It's easy to inadvertently introduce network waterfalls when code-splitting manually. Next.js provides automatic code splitting built into its router.
+The previous issue of slow loading times can be somewhat managed with code splitting. Manual code splitting often makes performance worse because it introduces network waterfalls. Next.js provides automatic code splitting built into its router.
 
 ### Network waterfalls
 
@@ -48,7 +48,7 @@ Depending on your needs, Next.js allows you to choose your data fetching strateg
 ## Migration Steps
 
 Our goal with this migration is to get a working Next.js application as quickly as possible, so that
-you can then adopt Next.js features incrementally. To begin with, we'll keep it as a purely
+you can then adopt Next.js features incrementally. The first step keeps it as a purely
 client-side application (SPA) without migrating your existing router. This helps minimize the
 chances of encountering issues during the migration process and reduces merge conflicts.
 
@@ -351,8 +351,8 @@ export default function RootLayout({ children }) {
 
 With the above changes, you shifted from declaring everything in your `index.html` to using Next.js'
 convention-based approach built into the framework
-([Metadata API](/docs/app/getting-started/metadata-and-og-images)). This approach enables you
-to more easily improve your SEO and web shareability of your pages.
+([Metadata API](/docs/app/getting-started/metadata-and-og-images)). This approach improves
+the SEO and shareability of your pages.
 
 ### Step 5: Create the Entrypoint Page
 
@@ -362,7 +362,7 @@ entrypoint of your application.
 
 1. **Create a `[[...slug]]` directory in your `app` directory.**
 
-Since in this guide we're aiming first to set up our Next.js as an SPA (Single Page Application), you need your page entrypoint to catch all possible routes of your application. For that, create a new `[[...slug]]` directory in your `app` directory.
+This guide first sets up Next.js as an SPA (Single Page Application), so the page entrypoint must catch all possible routes of your application. For that, create a new `[[...slug]]` directory in your `app` directory.
 
 This directory is what is called an [optional catch-all route segment](/docs/app/api-reference/file-conventions/dynamic-routes#optional-catch-all-segments). Next.js uses a file-system based router where folders are used to define routes. This special directory will make sure that all routes of your application will be directed to its containing `page.tsx` file.
 
@@ -398,7 +398,7 @@ This file is a [Server Component](/docs/app/getting-started/server-and-client-co
 
 This file imports our global CSS and tells [`generateStaticParams`](/docs/app/api-reference/functions/generate-static-params) we are only going to generate one route, the index route at `/`.
 
-Now, let's move the rest of our Vite application which will run client-only.
+Next, move the rest of the Vite application, which runs client-only.
 
 ```tsx filename="app/[[...slug]]/client.tsx" switcher
 'use client'

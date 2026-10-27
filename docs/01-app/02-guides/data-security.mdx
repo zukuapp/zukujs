@@ -307,7 +307,7 @@ export async function deleteUserAction(formData) {}
 
 ### Validating client input
 
-You should always validate input from client, as they can be easily modified. For example, form data, URL parameters, headers, and searchParams:
+You should always validate input from client, as clients can modify it. For example, form data, URL parameters, headers, and searchParams:
 
 ```tsx filename="app/page.tsx"
 // BAD: Trusting searchParams directly

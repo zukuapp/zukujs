@@ -1,6 +1,6 @@
 # Example app with [babel-macros](https://github.com/kentcdodds/babel-macros)
 
-This example features how to configure and use [`babel-macros`](https://github.com/kentcdodds/babel-macros) which allows you to easily add babel plugins which export themselves as a macro without needing to configure them.
+This example features how to configure and use [`babel-macros`](https://github.com/kentcdodds/babel-macros) which adds babel plugins which export themselves as a macro without needing to configure them.
 
 ## Deploy your own
 

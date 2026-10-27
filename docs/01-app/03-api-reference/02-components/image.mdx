@@ -1048,7 +1048,7 @@ This `next/image` component uses browser native [lazy loading](https://caniuse.c
 
 ### Styling images
 
-Styling the Image component is similar to styling a normal `<img>` element, but there are a few guidelines to keep in mind:
+Styling the Image component is similar to styling a normal `<img>` element, with the following guidelines:
 
 Use `className` or `style`, not `styled-jsx`. In most cases, we recommend using the `className` prop. This can be an imported [CSS Module](/docs/app/getting-started/css), a [global stylesheet](/docs/app/getting-started/css#global-css), etc.
 
@@ -1141,7 +1141,7 @@ export default function Page({ photoUrl }) {
 }
 ```
 
-Try it out:
+Example:
 
 - [Demo the image responsive to viewport](https://image-component.nextjs.gallery/responsive)
 
@@ -1321,7 +1321,7 @@ const ThemeImage = (props) => {
 
 > **Good to know**: The default behavior of `loading="lazy"` ensures that only the correct image is loaded. You cannot use `preload` or `loading="eager"` because that would cause both images to load. Instead, you can use [`fetchPriority="high"`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/fetchPriority).
 
-Try it out:
+Example:
 
 - [Demo light/dark mode theme detection](https://image-component.nextjs.gallery/theme)
 

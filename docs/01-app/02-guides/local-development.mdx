@@ -72,7 +72,7 @@ For the best development experience:
 
 Windows 11's Dev Drive feature uses an alternative filesystem to improve performance for common development workflows. [Microsoft has a guide explaining how to configure it](https://learn.microsoft.com/en-us/windows/dev-drive/).
 
-Alternatively, Windows provides an easy way to set up a Linux virtual machine using [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/). You may see better performance by using WSL 2.
+Alternatively, run a Linux virtual machine with [Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/). WSL 2 gives better performance than WSL 1.
 
 When using WSL 2, store your project directory inside the virtual machine's filesystem (e.g. `/home/$USER/project`) and not on a Windows drive (e.g. `C:\` or `/mnt/c`). If you do not do this, you will experience worse performance and file updates may not be reflected properly in development.
 

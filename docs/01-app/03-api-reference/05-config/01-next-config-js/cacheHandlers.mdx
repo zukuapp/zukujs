@@ -27,7 +27,7 @@ Custom handlers let you integrate with shared storage systems (like Redis, Memca
 
 **Changing storage type**
 
-You might want to store cache differently than the default in-memory approach. You can implement a custom handler to store cache on disk, in a database, or in an external caching service. Reasons include: persistence across restarts, reducing memory usage, or integrating with existing infrastructure.
+The default cache handler stores entries in memory. A custom handler stores cache on disk, in a database, or in an external caching service. Reasons include: persistence across restarts, reducing memory usage, or integrating with existing infrastructure.
 
 ## Usage
 

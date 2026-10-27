@@ -10,7 +10,7 @@ This is an example on how you can build a Next.js 14 project (with App Router), 
 - `[[...slug]]`: This is the catch-all route that is used to render all pages. It is important that this route is not removed, as it is used to render all pages. It fetches the ContentType and renders the corresponding
 - `not-found.tsx`: This page is used for dynamic 404 handling - adjust the database id to match your decired WordPress page, and make sure the WordPress slug is "not-found", your 404 page will then be editable from your CMS.
 - `codegen.ts`: Automatic type generation for your WordPress installation
-- `Draft Mode`: Seamless Preview / Draft Preview support, using authentication through WPGraphQL JWT Authentication and Next.js Draft Mode
+- `Draft Mode`: Preview / Draft Preview support, using authentication through WPGraphQL JWT Authentication and Next.js Draft Mode
 - `On Demand Cache Revalidation`: Including a bare minimum WordPress theme that implements cache revalidation, WordPress link rewrites and other utils for integrating with Next.js
 
 ## Deploy your own
@@ -127,7 +127,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 4. Adjust the ID in `not-found.tsx` to match the post id of your "404 Not Found" page in WordPress
 
-5. `npm run dev` and build an awesome application with WordPress!
+5. Run `npm run dev` to start the development server.
 
 > [!NOTE] > Running `npm run dev` will automatically generate typings from the WordPress installation found on the url provided in your environment variable: `NEXT_PUBLIC_WORDPRESS_API_URL`
 
@@ -171,7 +171,7 @@ All our GraphQL requests has the cache tag `wordpress` - when we update anything
 ## Template handling
 
 We use an "Optional Catch-all Segment" for handling all WordPress content.
-When rendering this component we simply ask GraphQL "what type of content is this route?" and fetch the corresponding template.
+When rendering this component we ask GraphQL "what type of content is this route?" and fetch the corresponding template.
 Each template can then have their own queries for fetching specific content for that template.
 
 ## SEO
