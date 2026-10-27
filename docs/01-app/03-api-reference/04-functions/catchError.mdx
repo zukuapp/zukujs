@@ -12,7 +12,7 @@ related:
 
 The `catchError` function creates a component that wraps its children in an error boundary. It provides a programmatic alternative to the [`error.js`](/docs/app/api-reference/file-conventions/error) file convention, enabling component-level error recovery anywhere in your component tree.
 
-Compared to a custom React error boundary, `catchError` is designed to work with Next.js out of the box:
+Compared to a custom React error boundary, `catchError` adds the following Next.js integration:
 
 - **Built-in error recovery** — [`retry()`](/docs/app/api-reference/file-conventions/error#retry) re-renders the page inside a [Transition](https://react.dev/reference/react/startTransition), preserving Client Components state outside of the error boundary.
 - **Framework-aware integration** — APIs like `redirect()` and `notFound()` work by throwing special errors under the hood. `catchError` handles these, so your error boundary does not catch them.
@@ -62,7 +62,7 @@ export default catchError(ErrorFallback)
 
 The `catchError` function creates a component that wraps its children in an error boundary. It provides a programmatic alternative to writing a [custom React error boundary class](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary), enabling component-level error recovery anywhere in your component tree.
 
-Compared to a custom React error boundary, `catchError` is designed to work with Next.js out of the box:
+Compared to a custom React error boundary, `catchError` adds the following Next.js integration:
 
 - **Built-in error recovery** — `reset()` re-renders the error boundary's children, letting users recover from errors without a full page reload.
 - **Client navigation handling** — The error state automatically clears when you do a client navigation to a different route.

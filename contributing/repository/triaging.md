@@ -1,7 +1,5 @@
 # Triaging
 
-Repository maintainers triage every issue and PR opened in the repository.
-
 > Note: Feature requests should be opened as discussions, filling out [this template](https://github.com/vercel/next.js/discussions/new?category=ideas).
 
 Issues are opened with one of these labels:
@@ -53,7 +51,7 @@ The issue will receive [this comment](https://github.com/vercel/next.js/blob/can
 
 ## Verified issues
 
-If an issue is verified, it will receive the `linear: next`, `linear: turbopack` or `linear: docs` label and will be tracked by the maintainers. Additionally, one or more [label(s)](https://github.com/vercel/next.js/labels) can be added to indicate which part of Next.js is affected.
+A verified issue can receive one or more [label(s)](https://github.com/vercel/next.js/labels) that indicate which part of Next.js is affected.
 
 Confirmed issues never become stale or are closed before resolution.
 

@@ -422,7 +422,6 @@ export const metadata = {
 >
 > - `metadataBase` is typically set in root `app/layout.js` to apply to URL-based `metadata` fields across all routes.
 > - When `generateMetadata` uses `'use cache'`, its return value must be serializable. `URL` instances are not supported by Cache Functions, so values such as `metadataBase` should be returned as strings (for example, `url.toString()`). See [`use cache` serialization requirements](/docs/app/api-reference/directives/use-cache#serialization).
-> - All URL-based `metadata` fields that require absolute URLs can be configured with a `metadataBase` option.
 > - `metadataBase` can contain a subdomain e.g. `https://app.acme.com` or base path e.g. `https://acme.com/start/from/here`
 > - If a `metadata` field provides an absolute URL, `metadataBase` will be ignored.
 > - Using a relative path in a URL-based `metadata` field without configuring a `metadataBase` will cause a build error.
@@ -1241,7 +1240,7 @@ There are two default `meta` tags that are always added even if a route doesn't 
 
 Streaming metadata allows Next.js to render and send the initial UI to the browser, without waiting for `generateMetadata` to complete.
 
-When `generateMetadata` resolves, the resulting metadata tags are appended to the `<body>` tag. We have verified that metadata is interpreted correctly by bots that execute JavaScript and inspect the full DOM (e.g. `Googlebot`).
+When `generateMetadata` resolves, the resulting metadata tags are appended to the `<body>` tag. Bots that execute JavaScript and inspect the full DOM (e.g. `Googlebot`) interpret this metadata correctly.
 
 For **HTML-limited bots** that can’t execute JavaScript (e.g. `facebookexternalhit`), metadata continues to block page rendering. The resulting metadata will be available in the `<head>` tag.
 

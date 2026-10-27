@@ -82,8 +82,6 @@ The `unsized` property on `next/image` was deprecated in Next.js 10.0.1. You can
 
 The `modules` and `render` option for `next/dynamic` were deprecated in Next.js 9.5. This was done in order to make the `next/dynamic` API closer to `React.lazy`. In Next.js 11, the `modules` and `render` options were removed.
 
-This option hasn't been mentioned in the documentation since Next.js 8 so it's less likely that your application is using it.
-
 If your application does use `modules` and `render` you can refer to [the documentation](/docs/messages/next-dynamic-modules).
 
 ### Remove `Head.rewind`
@@ -133,9 +131,9 @@ If your application uses `router.router.events` which was an internal property t
 
 ## React 16 to 17
 
-React 17 introduced a new [JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) that brings a long-time Next.js feature to the wider React ecosystem: Not having to `import React from 'react'` when using JSX. When using React 17 Next.js will automatically use the new transform. This transform does not make the `React` variable global, which was an unintended side-effect of the previous Next.js implementation. A [codemod is available](/docs/pages/guides/upgrading/codemods#add-missing-react-import) to automatically fix cases where you accidentally used `React` without importing it.
+React 17 introduced a new [JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) that removes the need to `import React from 'react'` when using JSX. When using React 17 Next.js will automatically use the new transform. This transform does not make the `React` variable global, which was an unintended side-effect of the previous Next.js implementation. A [codemod is available](/docs/pages/guides/upgrading/codemods#add-missing-react-import) to automatically fix cases where you accidentally used `React` without importing it.
 
-Most applications already use the latest version of React, with Next.js 11 the minimum React version has been updated to 17.0.2.
+With Next.js 11 the minimum React version has been updated to 17.0.2.
 
 To upgrade you can run the following command:
 

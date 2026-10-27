@@ -12,7 +12,7 @@ Some common approaches to this problem:
 - Deferring to `useEffect` avoids the error but introduces a visible flash.
 - Rendering only on the server means giving up on client-specific formatting entirely.
 
-Using an **inline script** that runs synchronously as the browser parses the HTML, you can update the DOM **before the first paint**. This guide covers dates, themes, and persisted UI state.
+Using an **inline script** that runs synchronously as the browser parses the HTML, you can update the DOM **before the first paint**.
 
 ## Example
 

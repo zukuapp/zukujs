@@ -9,8 +9,6 @@ This feature allows Next.js to emit hybrid applications that contain **both serv
 
 > **Good to know**: Statically generated pages are still reactive. Next.js will hydrate your application client-side to give it full interactivity.
 
-One of the main benefits of this feature is that optimized pages require no server-side computation, and are streamed to the end-user from multiple CDN locations.
-
 ## How it works
 
 If `getServerSideProps` or `getInitialProps` is present in a page, Next.js will switch to render the page on-demand, per-request (meaning [Server-Side Rendering](/docs/pages/building-your-application/rendering/server-side-rendering)).

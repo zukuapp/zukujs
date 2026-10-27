@@ -6,7 +6,7 @@ used in the run-up to a major release and for testing unreleased builds.
 
 ## Stable
 
-The stable release is what is installed when you `npm install next`. This channel is used by the majority of Next.js users.
+The stable release is what is installed when you `npm install next`.
 
 This channel is published at a regular cadence and follows [semantic versioning](https://semver.org).
 

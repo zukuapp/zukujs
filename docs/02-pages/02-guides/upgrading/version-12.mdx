@@ -46,23 +46,15 @@ bun add react@latest react-dom@latest
 
 #### SWC replacing Babel
 
-Next.js now uses the Rust-based compiler [SWC](https://swc.rs/) to compile JavaScript/TypeScript. This new compiler is up to 17x faster than Babel when compiling individual files and up to 5x faster Fast Refresh.
+Next.js now uses the Rust-based compiler [SWC](https://swc.rs/) to compile JavaScript/TypeScript.
 
 Next.js provides full backward compatibility with applications that have [custom Babel configuration](/docs/pages/guides/babel). All transformations that Next.js handles by default like styled-jsx and tree-shaking of `getStaticProps` / `getStaticPaths` / `getServerSideProps` have been ported to Rust.
 
 When an application has a custom Babel configuration, Next.js will automatically opt-out of using SWC for compiling JavaScript/TypeScript and will fall back to using Babel in the same way that it was used in Next.js 11.
 
-Many of the integrations with external libraries that currently require custom Babel transformations will be ported to Rust-based SWC transforms in the near future. These include but are not limited to:
-
-- Styled Components
-- Emotion
-- Relay
-
-In order to prioritize transforms that will help you adopt SWC, please provide your `.babelrc` on [this feedback thread](https://github.com/vercel/next.js/discussions/30174).
-
 #### SWC replacing Terser for minification
 
-You can opt-in to replacing Terser with SWC for minifying JavaScript up to 7x faster using a flag in `next.config.js`:
+You can opt-in to replacing Terser with SWC for minifying JavaScript using a flag in `next.config.js`:
 
 ```js filename="next.config.js"
 module.exports = {
@@ -70,13 +62,9 @@ module.exports = {
 }
 ```
 
-Minification using SWC is an opt-in flag to ensure it can be tested against more real-world Next.js applications before it becomes the default in Next.js 12.1. If you have feedback about minification, please leave it on [this feedback thread](https://github.com/vercel/next.js/discussions/30237).
-
 #### Improvements to styled-jsx CSS parsing
 
-On top of the Rust-based compiler we've implemented a new CSS parser based on the one used for the styled-jsx Babel transform. This new parser has improved handling of CSS and now errors when invalid CSS is used that would previously slip through and cause unexpected behavior.
-
-Because of this change invalid CSS will throw an error during development and `next build`. This change only affects styled-jsx usage.
+styled-jsx now uses a new CSS parser. Invalid CSS will throw an error during development and `next build`. This change only affects styled-jsx usage.
 
 #### `next/image` changed wrapping element
 

@@ -26,7 +26,7 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ## The idea behind the example
 
-Stencil is a compiler that generates Web Components (more specifically, Custom Elements). Stencil combines the best concepts of the most popular frameworks into a simple build-time tool.
+Stencil is a compiler that generates Web Components (more specifically, Custom Elements).
 
 In this example we have two workspaces:
 

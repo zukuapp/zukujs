@@ -13,8 +13,6 @@ related:
     - app/guides/prefetching
 ---
 
-This guide walks through understanding instant navigations, writing a route that navigates instantly, visualizing what's in the initial UI, and locking the behavior in with end-to-end tests.
-
 ## What "instant" means
 
 A navigation is **instant** when the browser can start rendering the new page the moment the user clicks, with static, cached, and fallback content showing up right away, while the server streams the remaining content into its fallbacks.
@@ -69,8 +67,6 @@ Adopt Cache Components and Partial Prefetching in this app so its navigations be
 
 4. When you finish a step, show me a table of the routes you touched and what changed on each, and talk me through what it means for the app. Keep it to the outcome, not the implementation details.
 ```
-
-The rest of this guide covers the tools these migrations use, walks a navigation that blocks to instant, inspects what lands in the initial UI, and locks the result in with end-to-end tests.
 
 ## The tools
 

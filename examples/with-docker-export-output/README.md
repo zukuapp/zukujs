@@ -28,7 +28,6 @@ A production-ready example demonstrating how to Dockerize Next.js applications u
 - Maximum performance and efficiency
 - Advanced caching and compression
 - Smaller Docker images (~50MB)
-- Industry-standard web server
 
 #### Using Docker Compose
 
@@ -236,7 +235,6 @@ This example can be deployed to any container-based platform:
 - Maximum performance is required
 - You need advanced caching and compression
 - Image size is a concern (~50MB vs ~300MB)
-- You want industry-standard web server
 
 **Use serve (`Dockerfile.serve`)** when:
 

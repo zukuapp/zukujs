@@ -4,11 +4,7 @@ nav_title: Contribution Guide
 description: Learn how to contribute to Next.js Documentation
 ---
 
-This page describes how to edit the Next.js documentation.
-
 ## Why Contribute?
-
-Open-source work is never done, and neither is documentation. Contributing to docs is a good way for beginners to get involved in open-source and for experienced developers to clarify more complex topics while sharing their knowledge with the community.
 
 Contributions include typo fixes, clarifications of confusing sections, and pages for missing topics.
 
@@ -20,7 +16,7 @@ The docs content can be found on the [Next.js repo](https://github.com/vercel/ne
 
 If you're new to GitHub, we recommend reading the [GitHub Open Source Guide](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to learn how to fork a repository, create a branch, and submit a pull request.
 
-> **Good to know**: The underlying docs code lives in a private codebase that is synced to the Next.js public repo. This means that you can't preview the docs locally. However, you'll see your changes on [nextjs.org](https://nextjs.org/docs) after merging a pull request.
+> **Good to know**: This repository does not include the docs site, so you cannot run the docs locally. Use the [VSCode previewer](#previewing-changes-locally) to check formatting. Changes appear on [nextjs.org](https://nextjs.org/docs) after the pull request is merged.
 
 ### Writing MDX
 
@@ -55,8 +51,6 @@ We also recommend the following extensions for VSCode users:
 
 ### Review Process
 
-Once you've submitted your contribution, the Next.js or Developer Experience teams will review your changes, provide feedback, and merge the pull request when it's ready.
-
 Post questions or requests for help as comments on your PR.
 
 > **Tip:** Run `pnpm prettier-fix` to run Prettier before submitting your PR.
@@ -88,10 +82,6 @@ But, in the [app router section](/docs/app), the files are prefixed with a two-d
 ```
 
 To quickly find a page, you can use `⌘ + P` (Mac) or `Ctrl + P` (Windows) to open the search bar on VSCode. Then, type the slug of the page you're looking for. E.g. `installation`
-
-> **Why not use a manifest?**
->
-> We considered using a manifest file (another popular way to generate the docs navigation), but we found that a manifest would quickly get out of sync with the files. File-system routing forces us to think about the structure of the docs and feels more native to Next.js.
 
 ## Metadata
 
@@ -269,7 +259,7 @@ Currently, we write TS and JS examples one after the other, and link them with `
 ```
 ````
 
-> **Good to know**: We plan to automatically compile TypeScript snippets to JavaScript in the future. In the meantime, you can use [transform.tools](https://transform.tools/typescript-to-javascript).
+> **Good to know**: Use [transform.tools](https://transform.tools/typescript-to-javascript) to convert TypeScript snippets to JavaScript.
 
 ### Line Highlighting
 
@@ -373,9 +363,7 @@ related:
 
 ## Diagrams
 
-Diagrams are a great way to explain complex concepts. We use [Figma](https://www.figma.com/) to create diagrams, following Vercel's design guide.
-
-The diagrams currently live in the `/public` folder in our private Next.js site. If you'd like to update or add a diagram, please open a [GitHub issue](https://github.com/vercel/next.js/issues/new?assignees=&labels=template%3A+documentation&projects=&template=4.docs_request.yml&title=Docs%3A+) with your ideas.
+To update or add a diagram, open a [GitHub issue](https://github.com/vercel/next.js/issues/new?assignees=&labels=template%3A+documentation&projects=&template=4.docs_request.yml&title=Docs%3A+) with your ideas.
 
 ## Custom Components and HTML
 
@@ -384,8 +372,6 @@ These are the React Components available for the docs: `<Image />` (next/image),
 If you have ideas for new components, please open a [GitHub issue](https://github.com/vercel/next.js/issues/new/choose).
 
 ## Style Guide
-
-This section contains guidelines for writing docs for those who are new to technical writing.
 
 ### Page Templates
 

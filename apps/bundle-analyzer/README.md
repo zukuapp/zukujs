@@ -12,9 +12,3 @@ This package is not published to npm. Instead it's built and vendored into the m
 - **Dependency Tracking**: View import chains and dependency relationships
 - **Filter Controls**: Filter by environment (client/server) and file types (JS/CSS/JSON/Assets)
 - **Search Functionality**: Search through files in your bundle
-
-## Updating
-
-When landing non-trivial changes, consider updating the demo site:
-* Site: https://turbopack-bundle-analyzer-demo.vercel.sh/
-* Repo: https://github.com/vercel/turbopack-bundle-analyzer-demo

@@ -1,6 +1,6 @@
 # Turso
 
-[Turso](https://turso.tech) is a SQLite-compatible database built on libSQL, the Open Contribution fork of SQLite. It enables scaling to hundreds of thousands of databases per organization and supports replication to any location, including your own servers, for microsecond-latency access.
+[Turso](https://turso.tech) is a SQLite-compatible database built on libSQL, the Open Contribution fork of SQLite.
 
 - [Turso Documentation](https://docs.turso.tech)
 - [Turso Support](https://discord.com/invite/4B5D7hYwub)

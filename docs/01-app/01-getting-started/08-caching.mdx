@@ -475,7 +475,7 @@ Next.js requires you to explicitly handle components that can't complete during 
 
 ### Maximizing the static shell
 
-The deeper your async work sits in the tree, the more of the page can be prerendered. This is the structural pattern Cache Components rewards: a general practice worth applying everywhere, and the foundation for the instant navigation and prefetching that follow. It applies to all [runtime APIs](#working-with-runtime-apis) and async operations like data fetches.
+The deeper your async work sits in the tree, the more of the page can be prerendered. It applies to all [runtime APIs](#working-with-runtime-apis) and async operations like data fetches.
 
 Consider a layout that destructures `params` at the top level:
 
@@ -533,7 +533,7 @@ The same principle applies to `cookies()`, `headers()`, `searchParams`, and data
 
 ### Instant navigation
 
-Cache Components shipped in 16.0.0 with verification that direct visits to a route produce a static shell. Client navigations are different: a `<Suspense>` boundary that covers a direct visit may not be part of the render during a transition. Cache Components now validates these navigations too, giving you insights and errors that guide you to make navigations to your route instant. For example, wrap data in `<Suspense>`, cache it with `use cache`, or move where the access happens.
+Cache Components validates that direct visits to a route produce a static shell. Client navigations are different: a `<Suspense>` boundary that covers a direct visit may not be part of the render during a transition. Cache Components also validates these navigations, giving you insights and errors that guide you to make navigations to your route instant. For example, wrap data in `<Suspense>`, cache it with `use cache`, or move where the access happens.
 
 Read the [Instant navigation guide](/docs/app/guides/instant-navigation) for examples and inspection tools.
 

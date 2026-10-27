@@ -11,8 +11,6 @@ Public pages show the same content to every user. Common examples include landin
 
 Since data is shared, these kind of pages can be [prerendered](/docs/app/glossary#prerendering) ahead of time and reused. This leads to faster page loads and lower server costs.
 
-This guide will show you how to build public pages that share data across users.
-
 ## Example
 
 This example builds a product list page.
@@ -246,10 +244,6 @@ In parallel, the user specific promotion is rendered on the server, streamed to 
 If we refresh the page one last time, we can see most of the page loads instantly, while the dynamic parts stream in as they become available.
 
 ### Next steps
-
-We've learned how to build mostly static pages that include pockets of dynamic content.
-
-We started with a static page, added async work, and resolved the blocking behavior by caching what could be prerendered, and streaming what couldn't.
 
 Related guides cover how to:
 

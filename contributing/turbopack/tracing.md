@@ -8,7 +8,7 @@ Inside of Next.js one can enable tracing with the `NEXT_TURBOPACK_TRACING` envir
 
 It supports [the following special preset values][presets]:
 
-- **`1` or `overview`:** Basic user level tracing is enabled. (This is the only preset available in a published Next.js release)
+- **`1` or `overview`:** Basic user level tracing is enabled.
 - **`next`:** Same as `overview`, but with lower-level `debug` and `trace` logs for Next.js's own crates
 - **`turbopack`:** Same as `next`, but with lower-level `debug` and `trace` logs for Turbopack's own crates
 - **`turbo-tasks`:** Same as `turbopack`, but also with verbose tracing of every Turbo-Engine function execution.

@@ -7,12 +7,8 @@ is an ok approximation.
 ## Getting started
 
 You will need a project_options file that points to some nextjs repo that has
-its dependencies installed. The easiest way to do that is to run a nextjs
-build using a modified binary that produces one out for you or to run the
-`generate` command and tweak it manually. We cannot bundle one in the repo,
-since it needs fs-specific paths and env vars.
-
-You can run the binary with the `generate` flag to build one for you.
+its dependencies installed. Run the binary with the `generate` command to
+build one, then tweak it manually if needed.
 
 ```sh
 cargo run -- generate /path/to/project > project_options.json

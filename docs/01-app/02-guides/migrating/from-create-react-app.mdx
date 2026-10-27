@@ -4,8 +4,6 @@ nav_title: Create React App
 description: Learn how to migrate your existing React application from Create React App to Next.js.
 ---
 
-This guide will help you migrate an existing Create React App (CRA) site to Next.js.
-
 ## Why Switch?
 
 There are several reasons why you might want to switch from Create React App to Next.js:
@@ -47,7 +45,7 @@ Depending on your needs, Next.js allows you to choose your data fetching strateg
 
 ## Migration Steps
 
-Our goal is to get a working Next.js application as quickly as possible so that you can then adopt Next.js features incrementally. To begin with, we’ll treat your application as a purely client-side application ([SPA](/docs/app/guides/single-page-applications)) without immediately replacing your existing router. This reduces complexity and merge conflicts.
+First, run the app as a purely client-side application ([SPA](/docs/app/guides/single-page-applications)) without replacing your existing router, then adopt Next.js features incrementally. This reduces complexity and merge conflicts.
 
 > **Note**: If you are using advanced CRA configurations such as a custom `homepage` field in your `package.json`, a custom service worker, or specific Babel/webpack tweaks, please see the **Additional Considerations** section at the end of this guide for tips on replicating or adapting these features in Next.js.
 

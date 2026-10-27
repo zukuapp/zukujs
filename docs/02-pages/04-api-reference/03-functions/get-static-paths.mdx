@@ -175,8 +175,6 @@ Instead, you may statically generate a small subset of pages and use `fallback: 
 
 Shortly after, `getStaticProps` finishes and the page will be rendered with the requested data. From now on, everyone who requests the same page will get the statically prerendered page.
 
-This ensures that users always have a fast experience while preserving fast builds and the benefits of Static Generation.
-
 `fallback: true` will not _update_ generated pages, for that take a look at [Incremental Static Regeneration](/docs/pages/guides/incremental-static-regeneration).
 
 ### `fallback: 'blocking'`

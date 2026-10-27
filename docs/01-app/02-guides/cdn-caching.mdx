@@ -1,7 +1,7 @@
 ---
 title: Using a CDN with Next.js
 nav_title: CDN Caching
-description: Learn how CDN caching works with Next.js, including what works today, cache variability, and the direction toward pathname-based cache keying.
+description: Learn how CDN caching works with Next.js, including what works today and cache variability.
 related:
   description: Related guides and references.
   links:
@@ -11,7 +11,7 @@ related:
     - app/api-reference/config/next-config-js/assetPrefix
 ---
 
-Next.js sets standard `Cache-Control` headers that CDNs can use to cache responses at the edge. This page covers what works today, where CDN caching is challenging, and the direction toward eliminating custom-header dependencies.
+Next.js sets standard `Cache-Control` headers that CDNs can use to cache responses at the edge.
 
 ## What Works Today
 
@@ -76,40 +76,7 @@ These headers can be omitted in specific cases without causing protocol errors. 
 
 **The `_rsc` search parameter** must be included in the cache key. It distinguishes response variants (HTML vs. RSC, different prefetch types). Ensure your CDN does not strip query parameters from cache keys, as some CDNs do this by default. By default, when an RSC request arrives without the correct `_rsc` value, the server responds with a **307 redirect** to the URL with the correct hash. This behavior can be disabled by setting `experimental.validateRSCRequestHeaders` to `false`. CDNs should follow this redirect. Platforms that compute the hash upstream can rewrite requests to include the correct `_rsc` before forwarding to avoid an extra round trip.
 
-> **Good to know:** Today, `next-url` is included in the `_rsc` hash even during static prefetches. This means you cannot safely ignore it under the current scheme without potentially getting cache misses. The pathname-based direction described below resolves this gap.
-
-## Direction: Pathname-Based Cache Keying
-
-The Next.js team is working on moving all cache-affecting inputs into the URL pathname, eliminating the need for `Vary` on custom headers and removing the `_rsc` search parameter. This resolves the CDN caching challenges described above.
-
-### How it works
-
-The approach extends the routing scheme that [`output: 'export'`](/docs/app/guides/static-exports) and segment prefetches already use today. File extensions in the pathname identify the response type:
-
-- **Full page RSC**: `/my/page.rsc` returns the RSC payload for the entire page
-- **Segment RSC**: `/my/page.segments/path/to/segment.segment.rsc` returns the RSC payload for a specific segment
-
-Under this model:
-
-- **The pathname determines the cache key.** Anything in the pathname affects which response variant is returned.
-- **Search parameters can be safely dropped** without affecting returned responses.
-- **Standard HTTP cache headers** (`Cache-Control`, `max-age`, etc.) are respected as usual.
-- **No `Vary` support needed** from the CDN.
-
-A CDN would cache Next.js responses by using the pathname as the cache key, ignoring search parameters, and respecting standard `Cache-Control` headers. No need to understand `Vary`, inspect custom headers, or program edge logic.
-
-### What changes for interception routes
-
-Under the current scheme, `next-url` contributes to the `_rsc` hash, so dropping it causes cache misses. Under the pathname-based scheme, interception variability would be encoded in a search parameter (not the pathname):
-
-- If a CDN preserves search params, interception works correctly.
-- If a CDN drops search params, interception is not supported. It would gracefully degrade to the non-intercepted page, client-side navigations won't break.
-
-This makes interception route support an opt-in CDN capability rather than a requirement.
-
-### Current status
-
-This direction extends patterns that are already operational in the codebase (segment prefetch paths, `output: 'export'` mode). It is in active design.
+> **Good to know:** Today, `next-url` is included in the `_rsc` hash even during static prefetches. This means you cannot safely ignore it under the current scheme without potentially getting cache misses.
 
 ## CDN Feature Compatibility
 

@@ -32,7 +32,7 @@
 
 ## Overview
 
-ZukuJS is ZUKU's maintained derivative of Next.js. This release is v27.26102701. It is based on upstream Next.js v16.4.0-canary.58. [ZUKUJS.md](https://github.com/zukuapp/zukujs/blob/HEAD/ZUKUJS.md) describes the fork and its changes.
+ZukuJS is ZUKU's maintained derivative of Next.js v16.4.0-canary.58. [ZUKUJS.md](https://github.com/zukuapp/zukujs/blob/HEAD/ZUKUJS.md) describes the fork and its changes.
 
 Next.js is a React framework for full-stack web applications. It extends the latest React features and integrates Rust-based JavaScript tooling.
 

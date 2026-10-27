@@ -13,7 +13,7 @@ The Studio connects to Sanity Content Lake, which gives you hosted content APIs 
 - A native and customizable authoring environment, accessible on `yourblog.com/studio`
 - Real-time and collaborative content editing with fine-grained revision history
 - Side-by-side instant content preview that works across your whole site
-- Support for block content and the most advanced custom fields capability in the industry
+- Support for block content and custom fields
 - Incremental Static Revalidation; no need to wait for a rebuild to publish new content
 - Unsplash integration for media management
 - [Sanity AI Assist preconfigured for image alt text generation](https://www.sanity.io/docs/ai-assist?utm_source=github.com&utm_medium=organic_social&utm_campaign=ai-assist&utm_content=)

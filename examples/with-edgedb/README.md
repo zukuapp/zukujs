@@ -139,7 +139,7 @@ Then:
 edgedb migrate --dsn <your-instance-dsn> --tls-security insecure
 ```
 
-You have to disable TLS checks with `--tls-security insecure`. All EdgeDB instances use TLS by default, but configuring it is out of scope of this project.
+You have to disable TLS checks with `--tls-security insecure`. All EdgeDB instances use TLS by default.
 
 3. Deploy this app to Vercel with the button above. You'll be prompted to provide a value for `EDGEDB_DSN`, the value from the previous step.
 

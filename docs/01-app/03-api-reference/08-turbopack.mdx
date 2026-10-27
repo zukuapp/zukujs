@@ -5,16 +5,7 @@ description: Turbopack is an incremental bundler optimized for JavaScript and Ty
 
 {/* The content of this doc is shared between the app and pages router. You can use the `<PagesOnly>Content</PagesOnly>` component to add content that is specific to the Pages Router. Any shared content should not be wrapped in a component. */}
 
-Turbopack is an **incremental bundler** optimized for JavaScript and TypeScript, written in Rust, and built into **Next.js**. You can use Turbopack with both the Pages and App Router for a **much faster** local development experience.
-
-## Why Turbopack?
-
-We built Turbopack to push the performance of Next.js, including:
-
-- **Unified Graph:** Next.js supports multiple output environments (e.g., client and server). Managing multiple compilers and stitching bundles together can be tedious. Turbopack uses a **single, unified graph** for all environments.
-- **Bundling vs Native ESM:** Some tools skip bundling in development and rely on the browser's native ESM. This works well for small apps but can slow down large apps due to excessive network requests. Turbopack **bundles** in dev, but in an optimized way to keep large apps fast.
-- **Incremental Computation:** Turbopack parallelizes work across cores and **caches** results down to the function level. Once a piece of work is done, Turbopack won’t repeat it. Results persist to disk between runs.
-- **Lazy Bundling:** Turbopack only bundles what is actually requested by the dev server. This lazy approach can reduce initial compile times and memory usage.
+Turbopack is an **incremental bundler** optimized for JavaScript and TypeScript, written in Rust, and built into **Next.js**. You can use Turbopack with both the Pages and App Router.
 
 ## Supported platforms
 
@@ -434,7 +425,6 @@ Some features are not yet implemented or not planned:
 - **Some Next.js Experimental Flags**
   - `experimental.nextScriptWorkers`
   - `experimental.fallbackNodePolyfills`
-    We plan to implement these in the future.
 
 For a full, detailed breakdown of each feature flag and its status, see the [Turbopack API Reference](/docs/app/api-reference/config/next-config-js/turbopack).
 
@@ -460,7 +450,7 @@ Additionally, the following experimental options are available under `experiment
 | `turbopackMinify`                                                                                            | Enable minification. Accepts a boolean, or `{ server, client, edge }` to configure each environment separately.                                                                                                                  | `false`       | `true`                        |
 | `turbopackSourceMaps`                                                                                        | Enable source maps.                                                                                                                                                                                                              | `true`        | `productionBrowserSourceMaps` |
 | `turbopackInputSourceMaps`                                                                                   | Enable extraction of source maps from input files.                                                                                                                                                                               | `true`        | `true`                        |
-| `turbopackModuleFragments`                                                                                   | Currently in active development. This splits modules into fragments and chunks only import the used fragments of the modules.                                                                                                    | `false`       | `false`                       |
+| `turbopackModuleFragments`                                                                                   | Split modules into fragments so that chunks import only the used fragments.                                                                                                                                                      | `false`       | `false`                       |
 | `turbopackRemoveUnusedImports`                                                                               | Enable removing unused imports. Requires `turbopackRemoveUnusedExports`.                                                                                                                                                         | `false`       | `true`                        |
 | `turbopackRemoveUnusedExports`                                                                               | Enable removing unused exports.                                                                                                                                                                                                  | `false`       | `true`                        |
 | `turbopackMangleExportNames`                                                                                 | Shorten the export names modules expose to each other, to reduce bundle size. A module whose export names can be observed (an escaping namespace object, a dynamic `import()`, a CommonJS `require()`) keeps its original names. | `false`       | `true`                        |

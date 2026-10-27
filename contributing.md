@@ -1,7 +1,6 @@
 # Contributing to Next.js
 
-- Read about our [Commitment to Open Source](https://vercel.com/oss).
-- Before you open a PR, search [existing PRs](https://github.com/vercel/next.js/pulls) and [issues](https://github.com/vercel/next.js/issues) for open or closed items that relate to your submission.
+Before you open a PR, search [existing PRs](https://github.com/vercel/next.js/pulls) and [issues](https://github.com/vercel/next.js/issues) for open or closed items that relate to your submission.
 
 ## What to contribute
 
@@ -11,7 +10,7 @@ You do not need permission to work on an issue. For new **features**, open a [di
 
 ## Trivial changes
 
-A maintainer reviews every pull request. Automated checks do not replace that review. Trivial PRs such as typo fixes, formatting, or code style changes are generally closed. The Next.js documentation (under `docs/`) is more open to such changes; see the [Docs Contribution Guide](https://nextjs.org/docs/community/contribution-guide).
+Trivial PRs such as typo fixes, formatting, or code style changes are generally closed. The Next.js documentation (under `docs/`) is more open to such changes; see the [Docs Contribution Guide](https://nextjs.org/docs/community/contribution-guide).
 
 ## Walkthrough video
 
@@ -19,13 +18,9 @@ A maintainer reviews every pull request. Automated checks do not replace that re
 
 ## Signed commits
 
-This repository requires verified commit signatures on protected branches.
+Protected branches accept only verified commit signatures. Configure Git to sign your commits with a GPG, SSH, or S/MIME key, add the key to your GitHub account, and confirm that your commits appear as `Verified`.
 
-Before contributing, configure Git to sign your commits with a GitHub-verified GPG, SSH, or S/MIME key. The repository rules reject unsigned commits. Rewrite them as signed commits before merging.
-
-If a pull request includes unsigned commits, re-sign the commits and force-push the branch. Add the signing key to your GitHub account and confirm that your commits appear as `Verified`.
-
-A `Signed-off-by` line in the commit message is not enough to satisfy this requirement.
+If a pull request includes unsigned commits, re-sign them and force-push the branch. A `Signed-off-by` line in the commit message does not satisfy this requirement.
 
 ## Repository
 

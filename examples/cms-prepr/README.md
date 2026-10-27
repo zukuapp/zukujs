@@ -140,7 +140,7 @@ For more advanced topics, please refer to the Prepr’s documentation:
 - [Personalization](https://docs.prepr.io/optimization-and-personalization/personalized-stack)
 - [Recommendations](https://docs.prepr.io/optimization-and-personalization/recommendations)
 
-If you have questions, please [get in touch](https://prepr.io/get-in-touch) with one of our specialists or [join our Slack community](https://slack.prepr.io/).
+For questions, [contact Prepr](https://prepr.io/get-in-touch) or join the [Prepr Slack community](https://slack.prepr.io/).
 
 ## Related examples
 
